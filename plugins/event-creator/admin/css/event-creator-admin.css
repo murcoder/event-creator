@@ -1,0 +1,286 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+ /* Placeholder text */
+ ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+     color: #959595;
+     opacity: 0.5;
+ }
+ :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #959595;
+    opacity:  1;
+ }
+ ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #959595;
+    opacity:  1;
+ }
+ :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:    #959595;
+    opacity: 0.5;
+ }
+ ::-ms-input-placeholder { /* Microsoft Edge */
+    color:    #959595;
+    opacity: 0.5;
+ }
+
+
+
+/* Event form */
+
+.flexbox {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+.flexbox .card {
+  flex: 1;
+}
+.event_form {
+  padding: 10px;;
+  margin-top: 40px;
+  width: 30%;
+  background-color: #fff;
+  box-shadow: 1px 1px 2px #888888;
+}
+.event_form fieldset {
+  width: 100%;
+  padding-bottom: 15px;
+}
+.event_form fieldset label{
+  width: 95%;
+  float: left;
+  margin: 10px 0 10px 0;
+  padding: 10px;
+  background-color: #f2f2f2;
+  color: #555555;
+  font-size: 16px;
+font-weight: bold;
+}
+
+select[name="event-creator_tag"]{
+  width: 100%;
+}
+input[name="event-creator_date"]{
+  float:left;
+  width: 49%;
+}
+input[name="event-creator_time"]{
+  float:left;
+  width:48%;
+}
+textarea[name="event-creator_content"]{
+  float:left;
+  width: 100%;
+}
+input[name="event-creator_speaker"]{
+  float:left;
+  width: 100%;
+}
+input[name="event-creator_country"]{
+  float:left;
+  width: 40%;
+}
+input[name="event-creator_location"]{
+  float:left;
+  width: 50%;
+}
+input[name="event-creator_url"]{
+  float:left;
+  width: 100%;
+}
+input[name="event-creator_file"]{
+  float:left;
+  width: 100%;
+}
+.event_form p.submit{
+  margin: auto;
+  text-align: center;
+}
+.event_form label {
+  color: #333; font-family: 'Muli', sans-serif; margin-bottom: 15px;
+}
+
+@media screen and (max-width: 782px){
+  body * {
+      width: 100% !important;
+  }
+}
+
+
+/* Event Settings */
+.event_creator_options{
+  padding: 10px;;
+  margin-top: 40px;
+  margin-left: 20px;
+  width: 30%;
+  background-color: #fff;
+  box-shadow: 1px 1px 2px #888888;
+}
+.event_creator_options p.submit{
+}
+.settings-list{
+  height: auto !important;
+  width: 95% !important;
+}
+
+.event_creator_new_tag{
+  padding: 10px;;
+  margin-top: 40px;
+  width: 30%;
+  background-color: #fff;
+  box-shadow: 1px 1px 2px #888888;
+}
+.event_creator_new_tag p.submit{
+  margin-top: 0;
+}
+
+
+
+
+
+/* Event list */
+.event_list{
+    margin: 0 20px 0 20px;
+    height:700px;
+    overflow:auto;
+    width: 100%;
+}
+.event_list table {
+  background: #fff repeat-x;
+	font:76%/160% "Trebuchet MS",Verdana,Arial,Helvetica,sans-serif;
+  background-color: #fff;
+  box-shadow: 1px 1px 2px #888888;
+  padding: 10px;
+  border-top:1px solid #e5eff8;
+  border-right:1px solid #e5eff8;
+  margin:1em auto;
+  border-collapse:collapse;
+  width: 100%;
+	}
+.event_list .submit {
+	text-align:center;
+  margin: 0;
+  padding: 0;
+	}
+.event_list .submit input{
+  background: #d93d3d;
+  border-color: #a72e2e #9d1b1b #9d1b1b;
+  -webkit-box-shadow: 0 1px 0 #9d1b1b;
+  box-shadow: 0 1px 0 #9d1b1b;
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0 -1px 1px #9d1b1b, 1px 0 1px #9d1b1b, 0 1px 1px #9d1b1b, -1px 0 1px #9d1b1b;
+}
+.event_list .submit input:hover {
+  background: #d26969;
+  border-color: #c95858 #be3f3f #be3f3f;
+  -webkit-box-shadow: 0 1px 0 #be3f3f;
+  box-shadow: 0 1px 0 #be3f3f;
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0 -1px 1px #be3f3f, 1px 0 1px #be3f3f, 0 1px 1px #be3f3f, -1px 0 1px #be3f3f;
+}
+
+.event_list input {
+  margin: 0;
+  padding: 2px 4px;
+  font-size: 0.8em;
+  text-align: center;
+  margin-left: 40%;
+}
+.event_list button button-small{
+    margin-left: 30%;
+}
+
+
+
+.event_list a:link {
+	color:#d42945;
+	text-decoration:none;
+	border-bottom:1px dotted #ffbac8;
+	}
+.event_list a:visited {
+	color:#d42945;
+	border-bottom:none;
+	text-decoration:none;
+	}
+.event_list a:hover,
+.event_list a:focus {
+	color:#f03b58;
+	border-bottom:1px solid #f03b58;
+	text-decoration:none;
+	}
+.event_list table a,
+.event_list table a:link,
+.event_list table a:visited {
+	border:none;
+	}
+
+
+.event_list caption {
+	color: #9ba9b4;
+	font-size:1.5em;
+		letter-spacing:.1em;
+		margin:1em 0 0 0;
+		padding:0;
+		caption-side:top;
+		text-align:center;
+  margin-bottom: 8px;
+	}
+.event_list tr.odd td	{
+	background:#f7fbff
+	}
+.event_list tr.odd .column1	{
+	background:#f4f9fe;
+	}
+.event_list .column1	{
+	background:#f9fcfe;
+	}
+.event_list td {
+	color:#678197;
+	border-bottom:1px solid #e5eff8;
+	border-left:1px solid #e5eff8;
+	padding:.3em 1em;
+	text-align:center;
+	}
+.event_list th {
+	font-weight:normal;
+	color: #678197;
+	text-align:left;
+	border-bottom: 1px solid #e5eff8;
+	border-left:1px solid #e5eff8;
+	padding:.3em 1em;
+	}
+.event_list thead th {
+	background:#f4f9fe;
+	text-align:center;
+	font:bold 1.2em/2em "Century Gothic","Trebuchet MS",Arial,Helvetica,sans-serif;
+	color:#66a3d3
+  -webkit-transition: background-color 0.2s ease-out;
+  -moz-transition: background-color 0.2s ease-out;
+  -o-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
+	}
+  .event_list thead th:hover {
+    background-color:  #678197;
+    cursor: pointer;
+    color:white;
+  	}
+.event_list tfoot th {
+	text-align:center;
+	background:#f4f9fe;
+	}
+.event_list tfoot th strong {
+	font:bold 1.2em "Century Gothic","Trebuchet MS",Arial,Helvetica,sans-serif;
+	margin:.5em .5em .5em 0;
+	color:#66a3d3;
+		}
+.event_list tfoot th em {
+	color:#f03b58;
+	font-weight: bold;
+	font-size: 1.1em;
+	font-style: normal;
+	}
